@@ -60,9 +60,11 @@ function printArray(arr, size) {
  
 // Let's start by sorting the unsorted.
  
-let arr = [7, 2, 999, 100, 8, 55, 3, 4];
+let arr = new Array(4);
 let n = arr.length;
- 
-document.write("Orginal array:" + arr);
+for(let i=0; i<n; i++){
+    arr[i]= prompt("Inserisci Numero");
+} 
+document.write("Numeri Inseriti:  " + arr + "<br></br>");
 quickSort(arr, 0, n - 1);
-document.write(" Sorted array:"+arr);
+document.write(" Numeri Ordinati: "+ arr);
